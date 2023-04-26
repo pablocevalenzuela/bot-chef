@@ -6,7 +6,7 @@ This App in React.JS es a Bot that cook a Recipe whit whatever ingredients you h
 
 Por that you can eat a good recipe, you need to make the nexts steps:
 
-### `Enter the ingredientes`
+### `Enter the ingredients`
 
 Only 3 Ingredients and click in "Add ingredients".
 
