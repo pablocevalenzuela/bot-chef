@@ -20,6 +20,12 @@ function FormIngredient(props){
         props.onSubmit(newIngredient);
     }
 
+    const validateIngredients = e => {
+        if (e.target.value == null ) {
+            alert('Please, enter an ingredient :)');
+        }
+    }
+
     return (
         <form 
             className="form-ingredient-container"
@@ -31,9 +37,11 @@ function FormIngredient(props){
             name="ingredient"
             placeholder="Enter an ingredient"
             onChange={ manageChange }
+            autoFocus
             />
             <button
             className="btn-add-ingredient"
+            onClick={ validateIngredients }
             >Add ingredient</button>
         </form>
     );

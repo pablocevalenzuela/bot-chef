@@ -6,7 +6,7 @@ function Recipe({recipe}){
          <form 
             className="form-ingredient-container"
             >
-            <h3>What ingredients do you have?</h3>
+
             <button
             className="btn-add-ingredient"
             >

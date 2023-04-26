@@ -19,6 +19,7 @@ function AllIngredients(){
         <>
         <FormIngredient onSubmit={addIngredient}/>
         <div className="list-all-ingredients-inseted">
+            <p>
             <h3>Your ingredients 🍚 🥩 🧅 🧅</h3>
             {
                 ingredients.map((ingredient) =>
@@ -29,6 +30,7 @@ function AllIngredients(){
                     />
                 )
             }
+            </p>
         </div>
         
         </>

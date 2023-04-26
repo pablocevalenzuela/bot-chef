@@ -8,7 +8,20 @@ function App() {
     <div className="App">
       <div className='container'>
         <div className='title'>
-          <h1>Recipe Book Bot 🤖</h1>
+          <h1>Chef Bot 🤖</h1>
+          <p>
+                Instrucctions:
+            </p>
+            <p>
+            <ul>
+                <li>
+                    1) Just enter three ingredients.
+                </li>
+                <li>
+                    2) Just enter three ingredients.
+                </li>
+            </ul>
+            </p>
         </div>
         <div className='ingredients'>
           <AllIngredients/>
