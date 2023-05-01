@@ -9,24 +9,19 @@ function App() {
       <div className='container'>
         <div className='title'>
           <h1>Chef Bot 🤖</h1>
-          <p>
-                Instrucctions:
-            </p>
-            <p>
+                <b>Instrucctions:</b>
             <ul>
                 <li>
                     1) Just enter three ingredients.
                 </li>
                 <li>
-                    2) Just enter three ingredients.
+                    2) Now, you have to click in "Get my recipe" an vualá 🤯.
                 </li>
             </ul>
-            </p>
         </div>
         <div className='ingredients'>
           <AllIngredients/>
           <Recipe/>
-
         </div>
       </div>
     </div>

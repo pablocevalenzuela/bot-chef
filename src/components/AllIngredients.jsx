@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import FormIngredient from "./FormIngredient"
 import Ingredient from "./Ingredient"
 
@@ -18,21 +18,19 @@ function AllIngredients(){
     return (
         <>
         <FormIngredient onSubmit={addIngredient}/>
+        <h3>Your ingrediens 🍚 🥩 🧅 🧅</h3>
         <div className="list-all-ingredients-inseted">
             <p>
-            <h3>Your ingredients 🍚 🥩 🧅 🧅</h3>
             {
                 ingredients.map((ingredient) =>
                     <Ingredient
-                        key={ingredient.id}
-                        id={ingredient.id} 
+                        id={ingredient.id}
                         text={ingredient.text}
                     />
                 )
             }
             </p>
         </div>
-        
         </>
 
     );

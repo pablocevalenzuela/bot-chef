@@ -6,11 +6,10 @@ function Recipe({recipe}){
          <form 
             className="form-ingredient-container"
             >
-
             <button
             className="btn-add-ingredient"
             >
-             😋 Get my Recipe
+             😋 Get my recipe
             </button>
         </form>
             <div className="recipe">
