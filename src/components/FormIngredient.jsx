@@ -46,5 +46,3 @@ function FormIngredient(props){
 }
 
 export default FormIngredient
-
-/*this is a comment*/
