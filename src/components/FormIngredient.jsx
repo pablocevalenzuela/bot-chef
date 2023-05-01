@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { v4 as uiidv4 } from "uuid";
 
 function FormIngredient(props){
@@ -21,9 +21,7 @@ function FormIngredient(props){
     }
 
     const validateIngredients = e => {
-        if (e.target.value == null ) {
-            alert('Please, enter an ingredient :)');
-        }
+            console.log("Ingredient added");
     }
 
     return (
@@ -48,3 +46,5 @@ function FormIngredient(props){
 }
 
 export default FormIngredient
+
+/*this is a comment*/
