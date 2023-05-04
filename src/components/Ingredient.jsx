@@ -2,13 +2,10 @@
 import React from "react";
 
 //function Ingredient ({ id, text, deleteIngredient }) {
-function Ingredient ({id, text, dropIngredient}) {
+function Ingredient ({id, text, cant, dropIngredient}) {
 
     return (
         <div className="ingredients-container">
-            <div className="ingredient">
-    
-            </div>
             <div className="ingredient">
                 {text} <a href="#" onClick={ () => dropIngredient(id) }>Drop</a>
             </div>
