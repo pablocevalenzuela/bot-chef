@@ -20,10 +20,6 @@ function FormIngredient(props){
         props.onSubmit(newIngredient);
     }
 
-    const validateIngredients = e => {
-            console.log("Ingredient added");
-    }
-
     return (
         <form 
             className="form-ingredient-container"
@@ -39,7 +35,6 @@ function FormIngredient(props){
             />
             <button
             className="btn-add-ingredient"
-            onClick={ validateIngredients }
             >Add ingredient</button>
         </form>
     );

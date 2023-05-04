@@ -21,7 +21,7 @@ function App() {
         </div>
         <div className='ingredients'>
           <AllIngredients/>
-          <Recipe/>
+          
         </div>
       </div>
     </div>

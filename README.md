@@ -1,6 +1,6 @@
 # Chef Bot App
 
-This App in React.JS es a Bot that cook a Recipe whit whatever ingredients you have on hand.
+This App in React is a Bot that cook a Recipe whit whatever ingredients you have on hand.
 
 ## Instructions.
 

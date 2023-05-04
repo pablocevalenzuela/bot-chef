@@ -15,6 +15,12 @@ function AllIngredients(){
         }
     }
 
+    const dropIngredient = id => {
+        const updatedIngredients = ingredients.filter(ingredient => ingredient.id !== id);
+        setIngredients(updatedIngredients);
+        console.log("Ingredient delete!")
+    }
+
     return (
         <>
         <FormIngredient onSubmit={addIngredient}/>
@@ -24,8 +30,10 @@ function AllIngredients(){
             {
                 ingredients.map((ingredient) =>
                     <Ingredient
+                        key={ingredient.id}
                         id={ingredient.id}
                         text={ingredient.text}
+                        dropIngredient={dropIngredient}
                     />
                 )
             }

@@ -1,21 +1,16 @@
-import React, { useState }from "react";
+//import React, { useState } from "react";
+import React from "react";
 
 //function Ingredient ({ id, text, deleteIngredient }) {
-function Ingredient (props) {
-
-    const [input, setInput] = useState('');
-
-    const dropIngredient = e => {
-        alert("¿Drop?");
-    }
+function Ingredient ({id, text, dropIngredient}) {
 
     return (
         <div className="ingredients-container">
             <div className="ingredient">
     
             </div>
-            <div className="option">
-               {props.text} <a href="#" onClick={ () => dropIngredient()}>Drop</a>
+            <div className="ingredient">
+                {text} <a href="#" onClick={ () => dropIngredient(id) }>Drop</a>
             </div>
         </div>
     )
