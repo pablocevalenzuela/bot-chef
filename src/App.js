@@ -12,7 +12,7 @@ function App() {
                 <b>Instrucctions:</b>
             <ul>
                 <li>
-                    1) Just enter three ingredients.
+                    1) Just enter six ingredients.
                 </li>
                 <li>
                     2) Now, you have to click in "Get my recipe" an vualá 🤯.

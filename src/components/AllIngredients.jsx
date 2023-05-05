@@ -5,8 +5,7 @@ import Ingredient from "./Ingredient"
 function AllIngredients(){
 
     const [ingredients, setIngredients] = useState([]);
-
-    let cantIng = 0;
+    let [cant = 0, setCant] = useState(null);
 
     const addIngredient = ingredient => {
         console.log(ingredient);
@@ -14,8 +13,8 @@ function AllIngredients(){
             ingredient.text = ingredient.text.trim();
             const updatedIngredients = [ingredient, ...ingredients];
             setIngredients(updatedIngredients);
-            cantIng = updatedIngredients.length;
-            console.log(cantIng);
+            cant = updatedIngredients.length;
+            setCant(cant);
             
         }
     }
@@ -23,16 +22,20 @@ function AllIngredients(){
     const dropIngredient = id => {
         const updatedIngredients = ingredients.filter(ingredient => ingredient.id !== id);
         setIngredients(updatedIngredients);
+        cant = updatedIngredients.length;
+        setCant(cant);
         console.log("Ingredient delete!")
     }
+
+    
 
     return (
         <>
         <FormIngredient onSubmit={addIngredient}/>
         <h3>Your ingrediens 🍚 🥩 🧅 🧅</h3>
         <div className="list-all-ingredients-inseted">
-            <div className="cant-ingredient">
-                Llevas {cantIng} ingrediente(s).
+            <div id="ci">
+                You have ({cant}) added.
             </div>
             <p>
             {
@@ -51,5 +54,5 @@ function AllIngredients(){
 
     );
 }
-
+/*this is a comment */
 export default AllIngredients
