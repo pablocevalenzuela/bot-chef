@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FormIngredient from "./FormIngredient"
 import Ingredient from "./Ingredient"
 
-function AllIngredients(){
+function Ingredients(){
 
     const [ingredients, setIngredients] = useState([]);
     let [cant = 0, setCant] = useState(null);
@@ -28,7 +28,9 @@ function AllIngredients(){
         setCant(cant);
     }
 
-    
+        const recipes = () => {
+          
+    }
 
     return (
         <>
@@ -53,10 +55,15 @@ function AllIngredients(){
                 )
             }
             </p>
+            <p>
+            <div>
+                <button onClick={ recipes }>Suggest recipes</button>
+            </div>
+            </p>
         </div>
         </>
 
     );
 }
 
-export default AllIngredients
+export default Ingredients

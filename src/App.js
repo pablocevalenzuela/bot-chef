@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import '../src/css/App.css';
-import AllIngredients from './components/AllIngredients';
+import Ingredients from './components/Ingredients';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             </ul>
         </div>
         <div className='ingredients'>
-            <AllIngredients/>
+            <Ingredients/>
         </div>
       </div>
     </div>
