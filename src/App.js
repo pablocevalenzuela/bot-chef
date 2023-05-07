@@ -1,6 +1,5 @@
 //import logo from './logo.svg';
 import '../src/css/App.css';
-import Recipe from './components/Recipe';
 import AllIngredients from './components/AllIngredients';
 
 function App() {
@@ -20,8 +19,7 @@ function App() {
             </ul>
         </div>
         <div className='ingredients'>
-          <AllIngredients/>
-          
+            <AllIngredients/>
         </div>
       </div>
     </div>

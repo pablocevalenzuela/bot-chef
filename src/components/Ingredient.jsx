@@ -4,12 +4,27 @@ import React from "react";
 //function Ingredient ({ id, text, cant, deleteIngredient }) {
 function Ingredient (props) {
 
+    const recipes = () => {
+        let ing = props.text;
+        if(ing == 'rice')
+        {
+            console.log("rice with eggs")
+        }
+    }
+
     return (
         <>
         <div className="ingredients-container">
-            <div className="ingredient">
+            <p>
+                <div className="ingredient">
                 {props.text} <a href="#" onClick={ () => props.dropIngredient(props.id) }>Drop</a>
-            </div>
+                </div>
+            </p>
+                <div>
+                <button onClick={ recipes() }>Suggest recipes</button>
+                </div>
+        </div>
+        <div>
         </div>
         </>
     )

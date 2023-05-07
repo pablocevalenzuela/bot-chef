@@ -9,17 +9,14 @@ function AllIngredients(){
     let [msg, setMsg] = useState(true);
 
     const addIngredient = ingredient => {
-        console.log(ingredient);
         if (ingredient.text.trim() && ingredients.length <= 2){
             ingredient.text = ingredient.text.trim();
             const updatedIngredients = [ingredient, ...ingredients];
             setIngredients(updatedIngredients);
             cant = updatedIngredients.length;
             setCant(cant);
-            console.log(ingredients);
         } else {
-           console.log("Only are 3 ingredients :(") 
-           msg = <h5>Error</h5>;
+           msg = <h5>¡Only You can enter Three Ingredients!.</h5>;
            setMsg(msg);
         }
     }
@@ -29,7 +26,6 @@ function AllIngredients(){
         setIngredients(updatedIngredients);
         cant = updatedIngredients.length;
         setCant(cant);
-        console.log("Ingredient delete!")
     }
 
     
